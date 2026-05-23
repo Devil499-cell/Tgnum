@@ -1,7 +1,5 @@
 {
-    "name": "number-info-api",
+    "name": "tgnum-api",
     "version": "1.0.0",
-    "description": "Number Info API - Powered by @KINGITACHI18",
-    "main": "api/number.js",
-    "author": "@KINGITACHI18"
+    "main": "api/number.js"
 }
