@@ -1,18 +1,23 @@
 {
   "version": 2,
-  "functions": {
-    "api/number.js": {
-      "runtime": "nodejs18.x"
+  "builds": [
+    {
+      "src": "number.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/number.js"
+      "src": "/number",
+      "dest": "/number.js"
+    },
+    {
+      "src": "/number/(.*)",
+      "dest": "/number.js"
     },
     {
       "src": "/",
-      "dest": "/api/number.js"
+      "dest": "/number.js"
     }
   ]
 }
