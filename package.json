@@ -1,16 +1,6 @@
 {
-  "name": "master-number-api",
+  "name": "patel-number-api",
   "version": "1.0.0",
-  "description": "Number info API by @KINGITACHI18 - Returns 5+ records",
-  "main": "api/index.js",
-  "scripts": {
-    "start": "node api/index.js",
-    "dev": "node api/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "keywords": ["number", "info", "api", "master"],
-  "author": "KINGITACHI18",
-  "license": "MIT"
+  "type": "module",
+  "dependencies": {}
 }
