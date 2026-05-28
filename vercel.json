@@ -1,27 +1,18 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/number.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/api",
-      "dest": "/api/index.js"
+      "src": "/api/(.*)",
+      "dest": "/api/number.js"
     },
     {
       "src": "/",
-      "dest": "/api/index.js"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
+      "dest": "/api/number.js"
     }
   ]
 }
